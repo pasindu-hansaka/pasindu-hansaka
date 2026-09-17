@@ -1,21 +1,3 @@
-
-Claude Desktop (Windows), Connected
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Readme · MD
 <h1 align="center">Hi, I'm Pasindu Hansaka 👋</h1> <p align="center"> Engineering Physics & Data Science student in Munich, working at the intersection of physics, simulation, and machine learning. </p> <p align="center"> <a href="https://pasindu-hansaka.github.io"><img src="https://img.shields.io/badge/Portfolio-pasindu--hansaka.github.io-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a> <a href="https://www.linkedin.com/in/pasindu-hansaka"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge" alt="LinkedIn"/></a> <a href="mailto:pasinduhansaka989@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a> </p>
 About me
 I'm an international student from Sri Lanka pursuing a B.Sc. in Engineering Physics and Data Science at Hochschule München. I like working where physics meets computation — simulation, signal processing, and machine learning — and I currently apply that at Munich Motorsport. I also tutor mathematics and chemistry to junior students.
