@@ -20,11 +20,11 @@ Full write-ups of my projects live on my **[portfolio site](https://pasindu-hans
 
 ### What I've been building
 
-- **Monte Carlo Simulation** — skidpad strategy optimization for Formula Student, exploring how different strategies perform under uncertainty.
-- **Graph SLAM** — path refinement for autonomous vehicles using graph-based simultaneous localization and mapping.
-- **Pipeline Delay Finder** — a ROS tool that analyzes timestamps across a robotics pipeline to surface where delays are introduced.
-- **[Self-Balancing Unicycle](https://github.com/pasindu-hansaka/self-balancing-unicycle)** — a MATLAB/Simulink model with a PID controller, simulating wheel and flywheel dynamics from an initial lean angle.
-- **[Velocity Control](https://github.com/pasindu-hansaka/Velocity-control)** — control system work built out in Jupyter/MATLAB.
+- **Monte Carlo Simulation** - skidpad strategy optimization for Formula Student, exploring how different strategies perform under uncertainty.
+- **Graph SLAM** - path refinement for autonomous vehicles using graph-based simultaneous localization and mapping.
+- **Pipeline Delay Finder** - a ROS tool that analyzes timestamps across a robotics pipeline to surface where delays are introduced.
+- **[Self-Balancing Unicycle](https://github.com/pasindu-hansaka/self-balancing-unicycle)** - a MATLAB/Simulink model with a PID controller, simulating wheel and flywheel dynamics from an initial lean angle.
+- **[Velocity Control](https://github.com/pasindu-hansaka/Velocity-control)** - control system work built out in Jupyter/MATLAB.
 
 ### Tools I work with
 
