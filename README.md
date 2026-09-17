@@ -14,9 +14,9 @@
 
 ### About me
 
-I'm an international student from Sri Lanka pursuing a B.Sc. in Engineering Physics and Data Science at Hochschule München. I like working where physics meets computation — simulation, signal processing, and machine learning — and I currently apply that at Munich Motorsport. I also tutor mathematics and chemistry to junior students.
+I'm an international student from Sri Lanka pursuing a B.Sc. in Engineering Physics and Data Science at Hochschule München. I like working where physics meets computation simulation, signal processing, and machine learning and I currently apply that at Munich Motorsport. I also tutor mathematics and chemistry to junior students.
 
-Full write-ups of my projects live on my **[portfolio site](https://pasindu-hansaka.github.io)** — that's the best place to see everything in context.
+Full write-ups of my projects live on my **[portfolio site](https://pasindu-hansaka.github.io)**  that's the best place to see everything in context.
 
 ### What I've been building
 
