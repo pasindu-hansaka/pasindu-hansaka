@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Pasindu Hansaka 👋</h1>
+<h1 align="center">Hi, I'm Pasindu Hansaka </h1>
 
 <p align="center">
   Engineering Physics & Data Science student in Munich, working at the intersection of physics, simulation, and machine learning.
