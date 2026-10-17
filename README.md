@@ -44,7 +44,6 @@ Also comfortable with: machine learning fundamentals, data structures & algorith
 ### GitHub stats
 
 <p align="left">
-  <img height="165" src="https://REPLACE-WITH-YOUR-VERCEL-DOMAIN.vercel.app/api?username=pasindu-hansaka&show_icons=true&theme=default&hide_border=true&count_private=true" alt="Pasindu's GitHub stats"/>
   <img height="165" src="https://streak-stats.demolab.com/?user=pasindu-hansaka&hide_border=true" alt="Pasindu's GitHub streak"/>
 </p>
 
