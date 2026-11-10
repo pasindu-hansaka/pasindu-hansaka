@@ -1,6 +1,11 @@
 <div align="center">
 
-<h1>Hi, I'm Pasindu Hansaka</h1>
+<a href="https://github.com/pasindu-hansaka">
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&center=true&vCenter=true&width=640&height=50&lines=Hi%2C+I'm+Pasindu+Hansaka;Python+%7C+AI+assistants+%7C+Control+systems;Building+in+public&color=0891B2" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&center=true&vCenter=true&width=640&height=50&lines=Hi%2C+I'm+Pasindu+Hansaka;Python+%7C+AI+assistants+%7C+Control+systems;Building+in+public&color=00E5FF" alt="Hi, I'm Pasindu Hansaka" />
+</picture>
+</a>
 
 <p>I build Python tools, AI assistants and control-system simulations, and I share the work in public.</p>
 
@@ -8,13 +13,6 @@
   <a href="https://pasindu-hansaka.github.io"><img src="https://img.shields.io/badge/Portfolio-visit-00e5ff?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
   <a href="https://github.com/pasindu-hansaka"><img src="https://img.shields.io/badge/GitHub-follow-ff00c8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
-
-<p><code>pasindu-hansaka@github ~ $ ./maintainer.sh</code></p>
-
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/system-scan?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&style=terminal&v=oss-system-scan-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/system-scan?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&style=terminal&v=oss-system-scan-1&mode=dark" width="860" alt="Pasindu Hansaka maintainer system scan" />
-</picture>
 
 </div>
 
