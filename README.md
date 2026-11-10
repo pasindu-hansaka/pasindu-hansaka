@@ -19,7 +19,7 @@
 ## About me
 
 - **Focus:** Python, data work in Jupyter, and web front-ends
-- **Interests:** AI assistants, automation tools and control systems (MATLAB/Simulink)
+- **Interests:** AI agents, automation tools and control systems (MATLAB/Simulink)
 - **Approach:** build in public, document the work, and make the next contribution easier
 
 ## Toolbox
@@ -27,7 +27,6 @@
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white" alt="MATLAB" />
   <img src="https://img.shields.io/badge/Simulink-E16737?style=flat-square&logoColor=white" alt="Simulink" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
