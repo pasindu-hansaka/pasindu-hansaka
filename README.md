@@ -109,4 +109,4 @@ If any of this is useful to you, you're welcome to open an issue, improve the do
 </picture>
 </p>
 
-<p align="center"><sub>Profile visuals by <a href="https://www.gitskins.com/readme-generator">GitSkins</a></sub></p>
+
