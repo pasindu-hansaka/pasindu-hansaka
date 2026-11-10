@@ -89,13 +89,6 @@
 </picture>
 </p>
 
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/heatmap?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&v=oss-heatmap-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/heatmap?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&v=oss-heatmap-1&mode=dark" width="100%" alt="Pasindu Hansaka contribution heatmap" />
-</picture>
-</p>
-
 ---
 
 ## Let's build together
