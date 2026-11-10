@@ -3,7 +3,7 @@
 <a href="https://github.com/pasindu-hansaka">
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&center=true&vCenter=true&width=640&height=50&lines=Hi%2C+I'm+Pasindu+Hansaka;Python+%7C+AI+assistants+%7C+Control+systems;Building+in+public&color=0891B2" />
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&center=true&vCenter=true&width=640&height=50&lines=Hi%2C+I'm+Pasindu+Hansaka;Python+%7C+AI+assistants+%7C+Control+systems;Building+in+public&color=00E5FF" alt="Hi, I'm Pasindu Hansaka" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&center=true&vCenter=true&width=640&height=50&lines=Hi%2C+I'm+Pasindu+Hansaka;Python+%7C+AI+agents+%7C+Control+systems;Machine+Learning+Algorithms&color=00E5FF" alt="Hi, I'm Pasindu Hansaka" />
 </picture>
 </a>
 
