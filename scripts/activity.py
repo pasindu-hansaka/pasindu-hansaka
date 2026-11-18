@@ -1,6 +1,6 @@
 """Render an animated contribution-activity SVG from a user's GitHub contribution calendar.
 
-Usage: GITHUB_TOKEN=... python scripts/activity.py <username> <out.svg>
+Usage: GITHUB_TOKEN=... python scripts/activity.py <username> <out.svg>   (also writes <out>-dark.svg)
        python scripts/activity.py --sample <out.svg>   (random data, for previews)
 Standard library only.
 """
@@ -14,7 +14,12 @@ import urllib.request
 QUERY = """query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{
   totalContributions weeks{contributionDays{date contributionCount contributionLevel}}}}}}"""
 LEVEL = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
-COLORS = ["#e6d7b6", "#cdb283", "#a8875a", "#76593a", "#3e2c1c"]
+THEMES = {
+    "light": dict(cells=["#eff1f3", "#c9ced4", "#959ca5", "#5c636b", "#1f2328"], ink="#1f2328", muted="#59636e",
+                  line="#d1d9e0", accent="#9a2a2a", page="#ffffff"),
+    "dark": dict(cells=["#1c2128", "#363c44", "#5f6670", "#9aa1aa", "#e6edf3"], ink="#e6edf3", muted="#9198a1",
+                 line="#3d444d", accent="#e5736b", page="#0d1117"),
+}
 
 
 def fetch(login, token):
@@ -62,7 +67,8 @@ def streaks(days):
     return cur, best
 
 
-def render(weeks):
+def render(weeks, theme="light"):
+    T = THEMES[theme]; COLORS = T["cells"]
     days = [d for w in weeks for d in w]
     total = sum(c for _, c, _ in days)
     cur, best = streaks(days)
@@ -90,7 +96,7 @@ def render(weeks):
         cells = []
         for d in w:
             wd = (dt.date.fromisoformat(d[0]).weekday() + 1) % 7  # Sunday = 0
-            fill = "#8e1b1b" if d is peak and d[1] else COLORS[d[2]]
+            fill = T["accent"] if d is peak and d[1] else COLORS[d[2]]
             cells.append(f'<rect x="{x}" y="{gy + wd * (cell + gap)}" width="{cell}" height="{cell}" rx="3" fill="{fill}">'
                          f'<title>{d[1]} contributions on {d[0]}</title></rect>')
         out.append(f'<g class="col" style="animation-delay:{0.3 + i * 0.03:.2f}s">{"".join(cells)}</g>')
@@ -112,18 +118,15 @@ def render(weeks):
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{total} contributions in the last year, longest streak {best} days">
 <defs>
-<linearGradient id="scan" x1="0" x2="1"><stop offset="0" stop-color="#f3e9d2" stop-opacity="0"/><stop offset=".5" stop-color="#f3e9d2" stop-opacity=".5"/><stop offset="1" stop-color="#f3e9d2" stop-opacity="0"/></linearGradient>
-<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e1b1b" stop-opacity=".18"/><stop offset="1" stop-color="#8e1b1b" stop-opacity="0"/></linearGradient>
-<linearGradient id="stroke" x1="0" x2="1"><stop offset="0" stop-color="#2a1f14"/><stop offset="1" stop-color="#2a1f14"/></linearGradient>
-<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" seed="3"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .25  0 0 0 0 .12  0 0 0 .09 0"/></filter>
-<filter id="blot" x="-50%" y="-50%" width="200%" height="200%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 .55  0 0 0 0 .4  0 0 0 0 .2  0 0 0 .18 -.04"/></filter>
-<radialGradient id="age" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#f3e9d2" stop-opacity="0"/><stop offset="1" stop-color="#e3cfa6"/></radialGradient>
+<linearGradient id="scan" x1="0" x2="1"><stop offset="0" stop-color="{T['page']}" stop-opacity="0"/><stop offset=".5" stop-color="{T['page']}" stop-opacity=".55"/><stop offset="1" stop-color="{T['page']}" stop-opacity="0"/></linearGradient>
+<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{T['accent']}" stop-opacity=".18"/><stop offset="1" stop-color="{T['accent']}" stop-opacity="0"/></linearGradient>
+<linearGradient id="stroke" x1="0" x2="1"><stop offset="0" stop-color="{T['ink']}"/><stop offset="1" stop-color="{T['ink']}"/></linearGradient>
 <clipPath id="hm"><rect x="{gx}" y="{gy}" width="{hm_w}" height="{7 * (cell + gap)}"/></clipPath>
 <style>
-text{{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:#2a1f14}}
-.ttl{{font-size:28px;font-style:italic;fill:#2a1f14}}
-.num{{font-size:32px;font-weight:600;fill:#2a1f14}}
-.lbl{{font-size:12px;letter-spacing:2px;fill:#6b5232}}
+text{{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:{T['ink']}}}
+.ttl{{font-size:28px;font-style:italic;fill:{T['ink']}}}
+.num{{font-size:32px;font-weight:600;fill:{T['ink']}}}
+.lbl{{font-size:12px;letter-spacing:2px;fill:{T['muted']}}}
 .col{{animation:pop .8s ease-out both;transform-box:fill-box;transform-origin:center}}
 @keyframes pop{{from{{opacity:0;transform:translateY(4px)}}to{{opacity:1;transform:none}}}}
 .st{{animation:up .7s ease-out both}}
@@ -137,8 +140,7 @@ text{{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times
 @media (prefers-reduced-motion:reduce){{*{{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}}}
 </style>
 </defs>
-<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="6" fill="#f3e9d2" stroke="#bfa77a"/>
-<rect width="{W}" height="{H}" rx="4" filter="url(#blot)"/><rect width="{W}" height="{H}" rx="4" fill="url(#age)"/><rect width="{W}" height="{H}" rx="4" filter="url(#grain)"/>
+<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="6" fill="none" stroke="{T['line']}"/>
 <text class="ttl" x="60" y="50">The Contribution Ledger</text>
 <text class="lbl" x="{W - 60}" y="46" text-anchor="end">TWELVE MONTHS</text>
 {stat_svg}
@@ -147,7 +149,7 @@ text{{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times
 <text class="lbl" x="60" y="{cy - 10}">THE LAST THIRTY DAYS</text>
 <path class="area" d="{area}" fill="url(#area)"/>
 <path class="line" d="{line}" fill="none" stroke="url(#stroke)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-<circle r="4" fill="#8e1b1b" opacity="0"><animate attributeName="opacity" values="0;1" begin="4s" dur=".3s" fill="freeze"/><animateMotion begin="4s" dur="10s" repeatCount="1" fill="freeze" path="{line}"/></circle>
+<circle r="4" fill="{T['accent']}" opacity="0"><animate attributeName="opacity" values="0;1" begin="4s" dur=".3s" fill="freeze"/><animateMotion begin="4s" dur="10s" repeatCount="1" fill="freeze" path="{line}"/></circle>
 </svg>'''
 
 
@@ -156,6 +158,8 @@ if __name__ == "__main__":
         data = sample()
     else:
         data = fetch(sys.argv[1], os.environ["GITHUB_TOKEN"])
-    os.makedirs(os.path.dirname(sys.argv[2]) or ".", exist_ok=True)
-    with open(sys.argv[2], "w", encoding="utf-8") as f:
-        f.write(render(data))
+    out = sys.argv[2]
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+    for theme, path in (("light", out), ("dark", out[:-4] + "-dark.svg")):
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(render(data, theme))

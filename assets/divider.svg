@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="1200" height="40" role="img" aria-label="divider">
-<style>text{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:#2a1f14}
+<style>text{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:#1f2328}
 .in{animation:in 1.4s ease-out both}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .fade{animation:fade 1.6s ease-out both}@keyframes fade{from{opacity:0}to{opacity:1}}
 .stamp{animation:stamp .6s cubic-bezier(.2,1.4,.4,1) both;transform-box:fill-box;transform-origin:center}
 @keyframes stamp{0%{opacity:0;transform:scale(1.8) rotate(-8deg)}100%{opacity:1;transform:none}}
 .ink{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 2.2s ease-in-out forwards}@keyframes draw{to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}</style>
-<path class="ink" d="M300 20 C400 20 470 8 540 20 S585 32 600 20 S615 8 660 20 S800 20 900 20" fill="none" stroke="#a88a5a" stroke-width="1.4" stroke-linecap="round"/>
-<circle class="fade" cx="600" cy="20" r="3" fill="#a88a5a" style="animation-delay:1.6s"/>
+<path class="ink" d="M300 20 C400 20 470 8 540 20 S585 32 600 20 S615 8 660 20 S800 20 900 20" fill="none" stroke="#59636e" stroke-width="1.4" stroke-linecap="round"/>
+<circle class="fade" cx="600" cy="20" r="3" fill="#59636e" style="animation-delay:1.6s"/>
 </svg>

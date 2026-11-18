@@ -1,19 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Pasindu Hansaka - Python, AI agents and control systems">
-<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" seed="3"/>
-<feColorMatrix values="0 0 0 0 .35  0 0 0 0 .25  0 0 0 0 .12  0 0 0 .09 0"/></filter>
-<filter id="blot" x="-50%" y="-50%" width="200%" height="200%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 .55  0 0 0 0 .4  0 0 0 0 .2  0 0 0 .18 -.04"/></filter>
-<radialGradient id="age" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#f3e9d2" stop-opacity="0"/><stop offset="1" stop-color="#e3cfa6"/></radialGradient><clipPath id="p0"><rect x="80" y="90" height="110" width="0"><animate attributeName="width" values="0;900" begin="0.3s" dur="2.4s" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1" fill="freeze"/></rect></clipPath><style>text{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:#2a1f14}
+<defs><clipPath id="p0"><rect x="80" y="90" height="110" width="0"><animate attributeName="width" values="0;900" begin="0.3s" dur="2.4s" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1" fill="freeze"/></rect></clipPath><style>text{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:#1f2328}
 .in{animation:in 1.4s ease-out both}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .fade{animation:fade 1.6s ease-out both}@keyframes fade{from{opacity:0}to{opacity:1}}
 .stamp{animation:stamp .6s cubic-bezier(.2,1.4,.4,1) both;transform-box:fill-box;transform-origin:center}
 @keyframes stamp{0%{opacity:0;transform:scale(1.8) rotate(-8deg)}100%{opacity:1;transform:none}}
 .ink{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 2.2s ease-in-out forwards}@keyframes draw{to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}</style></defs>
-<rect width="1200" height="320" rx="4" fill="#f3e9d2"/><rect width="1200" height="320" rx="4" filter="url(#blot)"/><rect width="1200" height="320" rx="4" fill="url(#age)"/><rect width="1200" height="320" rx="4" filter="url(#grain)"/><rect x=".5" y=".5" width="1199" height="319" rx="4" fill="none" stroke="#bfa77a"/>
-<text class="fade" x="100" y="70" font-size="14" letter-spacing="5" style="fill:#6b5232">FROM THE DESK OF</text>
+
+<text class="fade" x="100" y="70" font-size="14" letter-spacing="5" style="fill:#59636e">FROM THE DESK OF</text>
 <text x="96" y="168" font-size="84" font-weight="500" clip-path="url(#p0)">Pasindu Hansaka</text>
-<path class="ink" d="M100 196 C300 186 520 204 760 192" fill="none" stroke="#2a1f14" stroke-width="1.6" stroke-linecap="round" style="animation-delay:2.4s"/>
-<text class="in" x="100" y="240" font-size="21" letter-spacing="5" style="fill:#6b5232;animation-delay:2.8s">PYTHON  ·  AI AGENTS  ·  CONTROL SYSTEMS</text>
-<text class="in" x="100" y="276" font-size="17" font-style="italic" style="fill:#6b5232;animation-delay:3.2s">Correspondence on code, machines and curiosity — est. MMXXV</text>
+<path class="ink" d="M100 196 C300 186 520 204 760 192" fill="none" stroke="#1f2328" stroke-width="1.6" stroke-linecap="round" style="animation-delay:2.4s"/>
+<text class="in" x="100" y="240" font-size="21" letter-spacing="5" style="fill:#59636e;animation-delay:2.8s">PYTHON  ·  AI AGENTS  ·  CONTROL SYSTEMS</text>
+<text class="in" x="100" y="276" font-size="17" font-style="italic" style="fill:#59636e;animation-delay:3.2s">Correspondence on code, machines and curiosity — est. MMXXV</text>
 <g class="stamp" style="animation-delay:3.6s"><polygon points="1101.0,160.0 1103.4,174.5 1095.0,186.5 1090.8,200.5 1078.0,207.7 1068.2,218.6 1053.6,219.5 1040.0,225.0 1026.4,219.5 1011.8,218.6 1002.0,207.7 989.2,200.5 985.0,186.5 976.6,174.5 979.0,160.0 976.6,145.5 985.0,133.5 989.2,119.5 1002.0,112.3 1011.8,101.4 1026.4,100.5 1040.0,95.0 1053.6,100.5 1068.2,101.4 1078.0,112.3 1090.8,119.5 1095.0,133.5 1103.4,145.5" fill="#8e1b1b"/><circle cx="1040" cy="160" r="55" fill="none" stroke="#5e0f0f" stroke-width="2"/><circle cx="1018.3" cy="135.2" r="13.64" fill="#fff" fill-opacity=".12"/><text x="1040" y="177.36" text-anchor="middle" font-size="50" font-style="italic" style="fill:#f1d9c0;font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif">PH</text></g>
 </svg>
