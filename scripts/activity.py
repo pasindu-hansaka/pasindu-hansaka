@@ -14,7 +14,7 @@ import urllib.request
 QUERY = """query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{
   totalContributions weeks{contributionDays{date contributionCount contributionLevel}}}}}}"""
 LEVEL = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
-COLORS = ["#1a3328", "#3d5236", "#6e6c3f", "#a58a4a", "#d9bc72"]
+COLORS = ["#e6d7b6", "#cdb283", "#a8875a", "#76593a", "#3e2c1c"]
 
 
 def fetch(login, token):
@@ -90,7 +90,7 @@ def render(weeks):
         cells = []
         for d in w:
             wd = (dt.date.fromisoformat(d[0]).weekday() + 1) % 7  # Sunday = 0
-            fill = "#f3ead8" if d is peak and d[1] else COLORS[d[2]]
+            fill = "#8e1b1b" if d is peak and d[1] else COLORS[d[2]]
             cells.append(f'<rect x="{x}" y="{gy + wd * (cell + gap)}" width="{cell}" height="{cell}" rx="3" fill="{fill}">'
                          f'<title>{d[1]} contributions on {d[0]}</title></rect>')
         out.append(f'<g class="col" style="animation-delay:{0.3 + i * 0.03:.2f}s">{"".join(cells)}</g>')
@@ -112,15 +112,18 @@ def render(weeks):
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{total} contributions in the last year, longest streak {best} days">
 <defs>
-<linearGradient id="scan" x1="0" x2="1"><stop offset="0" stop-color="#e8d5a3" stop-opacity="0"/><stop offset=".5" stop-color="#e8d5a3" stop-opacity=".12"/><stop offset="1" stop-color="#e8d5a3" stop-opacity="0"/></linearGradient>
-<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a961" stop-opacity=".3"/><stop offset="1" stop-color="#c9a961" stop-opacity="0"/></linearGradient>
-<linearGradient id="stroke" x1="0" x2="1"><stop offset="0" stop-color="#a58a4a"/><stop offset="1" stop-color="#e8d5a3"/></linearGradient>
+<linearGradient id="scan" x1="0" x2="1"><stop offset="0" stop-color="#f3e9d2" stop-opacity="0"/><stop offset=".5" stop-color="#f3e9d2" stop-opacity=".5"/><stop offset="1" stop-color="#f3e9d2" stop-opacity="0"/></linearGradient>
+<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e1b1b" stop-opacity=".18"/><stop offset="1" stop-color="#8e1b1b" stop-opacity="0"/></linearGradient>
+<linearGradient id="stroke" x1="0" x2="1"><stop offset="0" stop-color="#2a1f14"/><stop offset="1" stop-color="#2a1f14"/></linearGradient>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" seed="3"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .25  0 0 0 0 .12  0 0 0 .09 0"/></filter>
+<filter id="blot" x="-50%" y="-50%" width="200%" height="200%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 .55  0 0 0 0 .4  0 0 0 0 .2  0 0 0 .18 -.04"/></filter>
+<radialGradient id="age" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#f3e9d2" stop-opacity="0"/><stop offset="1" stop-color="#e3cfa6"/></radialGradient>
 <clipPath id="hm"><rect x="{gx}" y="{gy}" width="{hm_w}" height="{7 * (cell + gap)}"/></clipPath>
 <style>
-text{{font-family:'Cormorant Garamond','Playfair Display',Garamond,Baskerville,'Times New Roman',Georgia,serif}}
-.ttl{{font-size:24px;font-style:italic;fill:#e8d5a3}}
-.num{{font-size:30px;font-weight:600;fill:#f3ead8}}
-.lbl{{font-size:12px;letter-spacing:2px;fill:#c9a961}}
+text{{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:#2a1f14}}
+.ttl{{font-size:28px;font-style:italic;fill:#2a1f14}}
+.num{{font-size:32px;font-weight:600;fill:#2a1f14}}
+.lbl{{font-size:12px;letter-spacing:2px;fill:#6b5232}}
 .col{{animation:pop .8s ease-out both;transform-box:fill-box;transform-origin:center}}
 @keyframes pop{{from{{opacity:0;transform:translateY(4px)}}to{{opacity:1;transform:none}}}}
 .st{{animation:up .7s ease-out both}}
@@ -129,22 +132,22 @@ text{{font-family:'Cormorant Garamond','Playfair Display',Garamond,Baskerville,'
 @keyframes draw{{to{{stroke-dashoffset:0}}}}
 .area{{animation:fade 1s 3s both}}
 @keyframes fade{{from{{opacity:0}}to{{opacity:1}}}}
-.scan{{animation:sweep 9s 3s linear infinite;opacity:0}}
+.scan{{animation:sweep 3s 3s ease-in-out 1 both;opacity:0}}
 @keyframes sweep{{0%{{transform:translateX(-160px);opacity:1}}100%{{transform:translateX({hm_w + 160}px);opacity:1}}}}
 @media (prefers-reduced-motion:reduce){{*{{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}}}
 </style>
 </defs>
-<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="6" fill="#10241c" stroke="#c9a961" stroke-opacity=".75" stroke-width="1.5"/>
-<rect x="8" y="8" width="{W - 16}" height="{H - 16}" rx="3" fill="none" stroke="#c9a961" stroke-opacity=".35"/>
-<text class="ttl" x="60" y="48">The Contribution Ledger</text>
+<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="6" fill="#f3e9d2" stroke="#bfa77a"/>
+<rect width="{W}" height="{H}" rx="4" filter="url(#blot)"/><rect width="{W}" height="{H}" rx="4" fill="url(#age)"/><rect width="{W}" height="{H}" rx="4" filter="url(#grain)"/>
+<text class="ttl" x="60" y="50">The Contribution Ledger</text>
 <text class="lbl" x="{W - 60}" y="46" text-anchor="end">TWELVE MONTHS</text>
 {stat_svg}
 {"".join(out)}
 <rect class="scan" clip-path="url(#hm)" x="{gx}" y="{gy}" width="160" height="{7 * (cell + gap)}" fill="url(#scan)"/>
 <text class="lbl" x="60" y="{cy - 10}">THE LAST THIRTY DAYS</text>
 <path class="area" d="{area}" fill="url(#area)"/>
-<path class="line" d="{line}" fill="none" stroke="url(#stroke)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<circle r="3.5" fill="#f3ead8" opacity="0"><animate attributeName="opacity" values="0;1" begin="4s" dur=".3s" fill="freeze"/><animateMotion begin="4s" dur="10s" repeatCount="indefinite" path="{line}"/></circle>
+<path class="line" d="{line}" fill="none" stroke="url(#stroke)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle r="4" fill="#8e1b1b" opacity="0"><animate attributeName="opacity" values="0;1" begin="4s" dur=".3s" fill="freeze"/><animateMotion begin="4s" dur="10s" repeatCount="1" fill="freeze" path="{line}"/></circle>
 </svg>'''
 
 
