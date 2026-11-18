@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="On the workbench: an ink sketch of a self-balancing unicycle being drawn, with turning gears. Building AI agents in Python, controllers in MATLAB/Simulink and fast pieces in C++.">
+<defs><filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch" seed="3"/>
+<feColorMatrix values="0 0 0 0 .35  0 0 0 0 .25  0 0 0 0 .12  0 0 0 .09 0"/></filter>
+<filter id="blot" x="-50%" y="-50%" width="200%" height="200%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="9"/><feColorMatrix values="0 0 0 0 .55  0 0 0 0 .4  0 0 0 0 .2  0 0 0 .18 -.04"/></filter>
+<radialGradient id="age" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#f3e9d2" stop-opacity="0"/><stop offset="1" stop-color="#e3cfa6"/></radialGradient><clipPath id="p9"><rect x="560" y="36" height="50" width="0"><animate attributeName="width" values="0;400" begin="2.0s" dur="1s" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1" fill="freeze"/></rect></clipPath><style>text{font-family:'EB Garamond','Cormorant Garamond',Garamond,Baskerville,'Times New Roman',Georgia,serif;fill:#2a1f14}
+.in{animation:in 1.4s ease-out both}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.fade{animation:fade 1.6s ease-out both}@keyframes fade{from{opacity:0}to{opacity:1}}
+.stamp{animation:stamp .6s cubic-bezier(.2,1.4,.4,1) both;transform-box:fill-box;transform-origin:center}
+@keyframes stamp{0%{opacity:0;transform:scale(1.8) rotate(-8deg)}100%{opacity:1;transform:none}}
+.ink{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 2.2s ease-in-out forwards}@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}
+.sk{fill:none;stroke:#2a1f14;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.thin{stroke-width:1.1;stroke-opacity:.7}
+.d1{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 1.4s ease-in-out forwards}
+.bal{transform-origin:190px 260px;animation:bal 3.2s 2.6s ease-in-out infinite alternate}
+@keyframes bal{from{transform:rotate(-3.5deg)}to{transform:rotate(3.5deg)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 2.4s 2.6s linear infinite}
+.spinr{animation-direction:reverse;animation-duration:1.6s}
+.slow{animation-duration:6s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.dim{stroke-dasharray:4 4;animation:fade 1s 2.2s both}
+</style></defs>
+<rect width="1000" height="300" rx="4" fill="#f3e9d2"/><rect width="1000" height="300" rx="4" filter="url(#blot)"/><rect width="1000" height="300" rx="4" fill="url(#age)"/><rect width="1000" height="300" rx="4" filter="url(#grain)"/><rect x=".5" y=".5" width="999" height="299" rx="4" fill="none" stroke="#bfa77a"/>
+<!-- ground -->
+<path class="sk thin d1" d="M60 260 H340"/>
+<path class="sk thin fade" d="M75 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M93 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M111 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M129 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M147 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M165 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M183 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M201 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M219 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M237 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M255 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M273 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M291 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M309 260 l-10 10" style="animation-delay:.6s"/><path class="sk thin fade" d="M327 260 l-10 10" style="animation-delay:.6s"/>
+<!-- the unicycle, balancing -->
+<g class="bal">
+  <g class="sk">
+    <circle class="d1" cx="190" cy="205" r="55" style="animation-delay:.2s"/>
+    <g class="spin slow"><g class="thin fade" style="animation-delay:1s"><path d="M190 205 L245.0 205.0"/><path d="M190 205 L228.9 243.9"/><path d="M190 205 L190.0 260.0"/><path d="M190 205 L151.1 243.9"/><path d="M190 205 L135.0 205.0"/><path d="M190 205 L151.1 166.1"/><path d="M190 205 L190.0 150.0"/><path d="M190 205 L228.9 166.1"/></g></g>
+    <circle cx="190" cy="205" r="5" class="fade" style="animation-delay:.9s"/>
+    <path class="d1" d="M183 205 V118 M197 205 V118 M174 118 H206 M190 118 V70" style="animation-delay:.8s"/>
+    <circle class="d1" cx="190" cy="70" r="34" style="animation-delay:1.3s"/>
+    <g class="spin"><g class="thin fade" style="animation-delay:1.9s"><path d="M190 70 L224.0 70.0"/><path d="M190 70 L207.0 99.4"/><path d="M190 70 L173.0 99.4"/><path d="M190 70 L156.0 70.0"/><path d="M190 70 L173.0 40.6"/><path d="M190 70 L207.0 40.6"/></g></g>
+    <circle cx="190" cy="70" r="4" class="fade" style="animation-delay:1.8s"/>
+  </g>
+</g>
+<!-- dimension line + annotation -->
+<g class="sk thin" style="stroke:#8e1b1b"><path class="dim" d="M285 70 V260"/><path class="dim" d="M277 70 h16 M277 260 h16"/></g>
+<text class="fade" x="297" y="165" font-size="13" font-style="italic" style="fill:#8e1b1b;animation-delay:2.3s">θ → 0</text>
+<!-- gears -->
+<g style="fill:none;stroke:#2a1f14;stroke-width:1.6" class="fade" >
+  <g class="spin" style="animation-duration:8s"><polygon points="456.0,120.0 462.6,125.6 461.5,131.1 453.3,133.8 451.2,138.0 454.1,146.2 450.4,150.4 441.9,148.6 438.0,151.2 436.5,159.7 431.1,161.5 424.7,155.7 420.0,156.0 414.4,162.6 408.9,161.5 406.2,153.3 402.0,151.2 393.8,154.1 389.6,150.4 391.4,141.9 388.8,138.0 380.3,136.5 378.5,131.1 384.3,124.7 384.0,120.0 377.4,114.4 378.5,108.9 386.7,106.2 388.8,102.0 385.9,93.8 389.6,89.6 398.1,91.4 402.0,88.8 403.5,80.3 408.9,78.5 415.3,84.3 420.0,84.0 425.6,77.4 431.1,78.5 433.8,86.7 438.0,88.8 446.2,85.9 450.4,89.6 448.6,98.1 451.2,102.0 459.7,103.5 461.5,108.9 455.7,115.3"/><circle cx="420" cy="120" r="12.6"/><circle cx="420" cy="120" r="3"/></g>
+  <g class="spin spinr" style="animation-duration:5.4s"><polygon points="492.0,182.0 497.5,187.5 495.9,192.7 488.3,194.2 485.6,197.6 485.6,205.3 480.7,207.9 474.3,203.6 470.0,204.0 464.5,209.5 459.3,207.9 457.8,200.3 454.4,197.6 446.7,197.6 444.1,192.7 448.4,186.3 448.0,182.0 442.5,176.5 444.1,171.3 451.7,169.8 454.4,166.4 454.4,158.7 459.3,156.1 465.7,160.4 470.0,160.0 475.5,154.5 480.7,156.1 482.2,163.7 485.6,166.4 493.3,166.4 495.9,171.3 491.6,177.7"/><circle cx="470" cy="182" r="7.7"/><circle cx="470" cy="182" r="3"/></g>
+</g>
+<!-- notes -->
+<text x="560" y="74" font-size="30" font-style="italic" clip-path="url(#p9)">On the workbench</text>
+<path class="ink" d="M562 88 H760" stroke="#bfa77a" style="animation-delay:2.4s"/>
+<clipPath id="p10"><rect x="560" y="102" height="40" width="0"><animate attributeName="width" values="0;400" begin="2.6s" dur="0.9s" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1" fill="freeze"/></rect></clipPath><text x="566" y="128" font-size="21" clip-path="url(#p10)">Agents that read, plan and act</text><text class="fade" x="568" y="148" font-size="12" letter-spacing="3" style="fill:#8e1b1b;animation-delay:3.2s">PYTHON</text><clipPath id="p11"><rect x="560" y="148" height="40" width="0"><animate attributeName="width" values="0;400" begin="3.3s" dur="0.9s" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1" fill="freeze"/></rect></clipPath><text x="566" y="174" font-size="21" clip-path="url(#p11)">Controllers that keep things upright</text><text class="fade" x="568" y="194" font-size="12" letter-spacing="3" style="fill:#8e1b1b;animation-delay:3.9s">MATLAB/SIMULINK</text><clipPath id="p12"><rect x="560" y="194" height="40" width="0"><animate attributeName="width" values="0;400" begin="4.0s" dur="0.9s" calcMode="spline" keyTimes="0;1" keySplines=".45 0 .55 1" fill="freeze"/></rect></clipPath><text x="566" y="220" font-size="21" clip-path="url(#p12)">Fast, close-to-the-metal pieces</text><text class="fade" x="568" y="240" font-size="12" letter-spacing="3" style="fill:#8e1b1b;animation-delay:4.6s">C++</text>
+</svg>
