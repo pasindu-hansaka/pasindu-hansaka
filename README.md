@@ -9,7 +9,7 @@
 </picture>
 </a>
 
-<p><em>Engineer building AI agents, control systems and the software in between, and sharing the work in public.</em></p>
+<p><em>AI &amp; ML research intern at Hochschule München and Formula Student Driverless team member, studying Engineering Physics &amp; Data Science.</em></p>
 
 <p>
   <a href="https://pasindu-hansaka.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Portfolio-visit-9198A1?style=for-the-badge&logo=githubpages&logoColor=1F2328&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/Portfolio-visit-59636E?style=for-the-badge&logo=githubpages&logoColor=FFFFFF&labelColor=1F2328" alt="Portfolio" /></picture></a>
@@ -20,7 +20,7 @@
 
 ## On the workbench
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench-dark.svg?v=2" /><img src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench.svg?v=2" width="100%" alt="An ink sketch of a self-balancing unicycle being drawn, with turning gears: building AI agents in Python, controllers in MATLAB/Simulink and driverless planning and SLAM for Formula Student" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench-dark.svg?v=3" /><img src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench.svg?v=3" width="100%" alt="An ink sketch of a self-balancing unicycle being drawn, with turning gears: AI and machine learning research at Hochschule München, controllers in MATLAB/Simulink and driverless planning and SLAM for Formula Student" /></picture></p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider.svg" width="100%" alt="" /></picture></p>
 
