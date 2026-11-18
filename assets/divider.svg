@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 12" width="1200" height="12" preserveAspectRatio="none" role="img" aria-label="divider">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#00e5ff" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#00e5ff"/>
-      <stop offset="1" stop-color="#ff00c8" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <rect y="5" width="1200" height="2" fill="#00e5ff" fill-opacity=".15"/>
-  <rect y="4" width="360" height="4" rx="2" fill="url(#g)">
-    <animate attributeName="x" values="-360;1200" dur="3.5s" repeatCount="indefinite"/>
-  </rect>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24" role="img" aria-label="divider">
+<defs><linearGradient id="gold" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#c9a961"/><stop offset=".45" stop-color="#c9a961"/><stop offset=".5" stop-color="#fff4d6"/><stop offset=".55" stop-color="#c9a961"/><stop offset="1" stop-color="#c9a961"/>
+<animateTransform attributeName="gradientTransform" type="translate" values="-1200 0;1200 0" dur="7s" repeatCount="indefinite"/></linearGradient></defs>
+<path d="M200 12 H580 M620 12 H1000" stroke="url(#gold)" stroke-width="1"/>
+<path d="M300 16 H570 M630 16 H900" stroke="#c9a961" stroke-opacity=".3" stroke-width=".8"/>
+<rect x="593" y="5" width="14" height="14" transform="rotate(45 600 12)" fill="none" stroke="#c9a961"/>
+<rect x="597" y="9" width="6" height="6" transform="rotate(45 600 12)" fill="#c9a961"/>
+<circle cx="572" cy="12" r="2" fill="#c9a961"/><circle cx="628" cy="12" r="2" fill="#c9a961"/>
 </svg>

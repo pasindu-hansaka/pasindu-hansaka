@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 170" width="440" height="170" role="img" aria-label="file-organizer: A Python CLI that sorts files into type-based folders (Images, Documents, Videos and more).">
-<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#ff00c8"/></linearGradient>
-<style>text{font-family:'Fira Code','JetBrains Mono',Consolas,monospace}.n{font-size:19px;font-weight:700;fill:url(#g)}.d{font-size:13.5px;fill:#c9d1d9}.l{font-size:12.5px;fill:#8b949e}
-.c{animation:in .7s 0.15s both}@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.run{stroke-dasharray:120 1092;animation:run 5s 0.6s linear infinite}@keyframes run{to{stroke-dashoffset:-1212}}@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}</style></defs>
-<g class="c">
-<rect x="2" y="2" width="436" height="166" rx="14" fill="#0b1220" stroke="#00e5ff" stroke-opacity=".25" stroke-width="1.5"/>
-<rect class="run" x="2" y="2" width="436" height="166" rx="14" fill="none" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round"/>
-<text x="24" y="38" class="l">📁 repo</text>
-<text class="n" x="24" y="62">file-organizer</text>
-<text class="d" x="24" y="86">A Python CLI that sorts files into type-based</text><text class="d" x="24" y="107">folders (Images, Documents, Videos and more).</text>
-<circle cx="30" cy="146" r="6" fill="#3776ab"/><text class="l" x="44" y="150">Python</text>
-<text class="l" x="416" y="150" text-anchor="end" fill="#00e5ff">view →</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" width="440" height="200" role="img" aria-label="file-organizer: A Python CLI that sorts files into type-based folders: images, documents, videos and more.">
+<defs><linearGradient id="gold" x1="0" y1="0" x2="440" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#c9a961"/><stop offset=".45" stop-color="#c9a961"/><stop offset=".5" stop-color="#fff4d6"/><stop offset=".55" stop-color="#c9a961"/><stop offset="1" stop-color="#c9a961"/>
+<animateTransform attributeName="gradientTransform" type="translate" values="-440 0;440 0" dur="7s" repeatCount="indefinite"/></linearGradient></defs>
+<style>text{font-family:'Cormorant Garamond','Playfair Display',Garamond,Baskerville,'Times New Roman',Georgia,serif}.n{font-size:23px;font-weight:600;fill:url(#gold)}.d{font-size:16px;font-style:italic;fill:#f3ead8;fill-opacity:.85}
+.k{font-size:12px;letter-spacing:3px;fill:#c9a961}.c{animation:in 1.2s 0.25s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}</style>
+<g class="c"><rect x="1" y="1" width="438" height="198" rx="6" fill="#10241c" stroke="#c9a961" stroke-opacity=".75" stroke-width="1.5"/><rect x="8" y="8" width="424" height="184" rx="3" fill="none" stroke="#c9a961" stroke-opacity=".35"/><path d="M8 18 L8 8 L18 8" fill="none" stroke="#c9a961" stroke-width="2"/><rect x="10.5" y="10.5" width="5" height="5" transform="rotate(45 13 13)" fill="#c9a961"/><path d="M432 18 L432 8 L422 8" fill="none" stroke="#c9a961" stroke-width="2"/><rect x="424.5" y="10.5" width="5" height="5" transform="rotate(45 427 13)" fill="#c9a961"/><path d="M8 182 L8 192 L18 192" fill="none" stroke="#c9a961" stroke-width="2"/><rect x="10.5" y="184.5" width="5" height="5" transform="rotate(45 13 187)" fill="#c9a961"/><path d="M432 182 L432 192 L422 192" fill="none" stroke="#c9a961" stroke-width="2"/><rect x="424.5" y="184.5" width="5" height="5" transform="rotate(45 427 187)" fill="#c9a961"/>
+<text class="k" x="220.0" y="40" text-anchor="middle">— No. II —</text>
+<text class="n" x="220.0" y="74" text-anchor="middle">file-organizer</text>
+<path d="M180.0 86 H260.0" stroke="#c9a961" stroke-opacity=".5"/>
+<text class="d" x="220.0" y="108" text-anchor="middle">A Python CLI that sorts files into type-</text><text class="d" x="220.0" y="130" text-anchor="middle">based folders: images, documents, videos and</text><text class="d" x="220.0" y="152" text-anchor="middle">more.</text>
+<text class="k" x="34" y="172">PYTHON</text>
+<text class="k" x="406" y="172" text-anchor="end">VIEW ›</text>
 </g></svg>

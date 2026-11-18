@@ -14,7 +14,7 @@ import urllib.request
 QUERY = """query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{
   totalContributions weeks{contributionDays{date contributionCount contributionLevel}}}}}}"""
 LEVEL = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
-COLORS = ["#161b22", "#033a46", "#006b7d", "#00a8c2", "#00e5ff"]
+COLORS = ["#1a3328", "#3d5236", "#6e6c3f", "#a58a4a", "#d9bc72"]
 
 
 def fetch(login, token):
@@ -90,7 +90,7 @@ def render(weeks):
         cells = []
         for d in w:
             wd = (dt.date.fromisoformat(d[0]).weekday() + 1) % 7  # Sunday = 0
-            fill = "#ff00c8" if d is peak and d[1] else COLORS[d[2]]
+            fill = "#f3ead8" if d is peak and d[1] else COLORS[d[2]]
             cells.append(f'<rect x="{x}" y="{gy + wd * (cell + gap)}" width="{cell}" height="{cell}" rx="3" fill="{fill}">'
                          f'<title>{d[1]} contributions on {d[0]}</title></rect>')
         out.append(f'<g class="col" style="animation-delay:{0.3 + i * 0.03:.2f}s">{"".join(cells)}</g>')
@@ -104,46 +104,47 @@ def render(weeks):
     line = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
     area = line + f" L{cx + cw} {cy + ch} L{cx} {cy + ch}Z"
 
-    stats = [(f"{total:,}", "contributions"), (f"{cur} d", "current streak"),
-             (f"{best} d", "longest streak"), (str(peak[1]), f"best day · {peak_label}")]
+    stats = [(f"{total:,}", "CONTRIBUTIONS"), (f"{cur} days", "CURRENT STREAK"),
+             (f"{best} days", "LONGEST STREAK"), (str(peak[1]), f"FINEST DAY · {peak_label.upper()}")]
     stat_svg = "".join(
         f'<g class="st" style="animation-delay:{0.1 + k * 0.15:.2f}s"><text class="num" x="{60 + k * (W - 120) // 4}" y="92">{v}</text>'
         f'<text class="lbl" x="{60 + k * (W - 120) // 4}" y="112">{label}</text></g>' for k, (v, label) in enumerate(stats))
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{total} contributions in the last year, longest streak {best} days">
 <defs>
-<linearGradient id="scan" x1="0" x2="1"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset=".5" stop-color="#00e5ff" stop-opacity=".18"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient>
-<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff00c8" stop-opacity=".35"/><stop offset="1" stop-color="#ff00c8" stop-opacity="0"/></linearGradient>
-<linearGradient id="stroke" x1="0" x2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#ff00c8"/></linearGradient>
+<linearGradient id="scan" x1="0" x2="1"><stop offset="0" stop-color="#e8d5a3" stop-opacity="0"/><stop offset=".5" stop-color="#e8d5a3" stop-opacity=".12"/><stop offset="1" stop-color="#e8d5a3" stop-opacity="0"/></linearGradient>
+<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a961" stop-opacity=".3"/><stop offset="1" stop-color="#c9a961" stop-opacity="0"/></linearGradient>
+<linearGradient id="stroke" x1="0" x2="1"><stop offset="0" stop-color="#a58a4a"/><stop offset="1" stop-color="#e8d5a3"/></linearGradient>
 <clipPath id="hm"><rect x="{gx}" y="{gy}" width="{hm_w}" height="{7 * (cell + gap)}"/></clipPath>
 <style>
-text{{font-family:'Fira Code','JetBrains Mono',Consolas,monospace}}
-.ttl{{font-size:16px;font-weight:700;fill:#00e5ff;letter-spacing:2px}}
-.num{{font-size:26px;font-weight:700;fill:#e6edf3}}
-.lbl{{font-size:11px;fill:#8b949e}}
-.col{{animation:pop .5s cubic-bezier(.3,1.6,.5,1) both;transform-box:fill-box;transform-origin:center}}
-@keyframes pop{{from{{opacity:0;transform:scaleY(.2)}}to{{opacity:1;transform:none}}}}
+text{{font-family:'Cormorant Garamond','Playfair Display',Garamond,Baskerville,'Times New Roman',Georgia,serif}}
+.ttl{{font-size:24px;font-style:italic;fill:#e8d5a3}}
+.num{{font-size:30px;font-weight:600;fill:#f3ead8}}
+.lbl{{font-size:12px;letter-spacing:2px;fill:#c9a961}}
+.col{{animation:pop .8s ease-out both;transform-box:fill-box;transform-origin:center}}
+@keyframes pop{{from{{opacity:0;transform:translateY(4px)}}to{{opacity:1;transform:none}}}}
 .st{{animation:up .7s ease-out both}}
 @keyframes up{{from{{opacity:0;transform:translateY(10px)}}to{{opacity:1;transform:none}}}}
 .line{{stroke-dasharray:2000;stroke-dashoffset:2000;animation:draw 2.4s 1.6s ease-out forwards}}
 @keyframes draw{{to{{stroke-dashoffset:0}}}}
 .area{{animation:fade 1s 3s both}}
 @keyframes fade{{from{{opacity:0}}to{{opacity:1}}}}
-.scan{{animation:sweep 5s 2.5s linear infinite;opacity:0}}
+.scan{{animation:sweep 9s 3s linear infinite;opacity:0}}
 @keyframes sweep{{0%{{transform:translateX(-160px);opacity:1}}100%{{transform:translateX({hm_w + 160}px);opacity:1}}}}
 @media (prefers-reduced-motion:reduce){{*{{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}}}
 </style>
 </defs>
-<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="#0b1220" stroke="#00e5ff" stroke-opacity=".35" stroke-width="2"/>
-<text class="ttl" x="60" y="44">&gt; CONTRIBUTION_ACTIVITY</text>
-<text class="lbl" x="{W - 60}" y="44" text-anchor="end">last 12 months</text>
+<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="6" fill="#10241c" stroke="#c9a961" stroke-opacity=".75" stroke-width="1.5"/>
+<rect x="8" y="8" width="{W - 16}" height="{H - 16}" rx="3" fill="none" stroke="#c9a961" stroke-opacity=".35"/>
+<text class="ttl" x="60" y="48">The Contribution Ledger</text>
+<text class="lbl" x="{W - 60}" y="46" text-anchor="end">TWELVE MONTHS</text>
 {stat_svg}
 {"".join(out)}
 <rect class="scan" clip-path="url(#hm)" x="{gx}" y="{gy}" width="160" height="{7 * (cell + gap)}" fill="url(#scan)"/>
-<text class="lbl" x="60" y="{cy - 10}">last 30 days</text>
+<text class="lbl" x="60" y="{cy - 10}">THE LAST THIRTY DAYS</text>
 <path class="area" d="{area}" fill="url(#area)"/>
 <path class="line" d="{line}" fill="none" stroke="url(#stroke)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-<circle r="4" fill="#ff00c8" opacity="0"><animate attributeName="opacity" values="0;1" begin="4s" dur=".3s" fill="freeze"/><animateMotion begin="4s" dur="6s" repeatCount="indefinite" path="{line}"/></circle>
+<circle r="3.5" fill="#f3ead8" opacity="0"><animate attributeName="opacity" values="0;1" begin="4s" dur=".3s" fill="freeze"/><animateMotion begin="4s" dur="10s" repeatCount="indefinite" path="{line}"/></circle>
 </svg>'''
 
 
