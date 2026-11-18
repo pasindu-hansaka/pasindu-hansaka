@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Pasindu Hansaka - Python, AI agents and control systems">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#ff00c8"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1200 0;0 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="spread" spreadMethod="repeat" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#ff00c8"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+    <radialGradient id="blobA"><stop offset="0" stop-color="#00e5ff" stop-opacity=".35"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="blobB"><stop offset="0" stop-color="#ff00c8" stop-opacity=".3"/><stop offset="1" stop-color="#ff00c8" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#00e5ff" stroke-opacity=".07"/>
+      <animateTransform attributeName="patternTransform" type="translate" values="0 0;40 40" dur="4s" repeatCount="indefinite"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="320" rx="18"/></clipPath>
+    <style>
+      .blob{animation:drift 14s ease-in-out infinite alternate}
+      .b2{animation-duration:18s;animation-direction:alternate-reverse}
+      @keyframes drift{from{transform:translate(0,0)}to{transform:translate(260px,40px)}}
+      .wave{animation:slide 10s linear infinite}
+      .w2{animation-duration:16s}
+      @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-600px)}}
+      .p{animation:rise 9s linear infinite;opacity:0}
+      @keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-260px);opacity:0}}
+      .sub{font:500 26px 'Fira Code','JetBrains Mono',Consolas,monospace;fill:#c9d1d9;animation:fade 1.2s .6s both}
+      .tag{font:600 15px 'Fira Code',Consolas,monospace;fill:#00e5ff;letter-spacing:4px;animation:fade 1.2s both}
+      @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+      .cur{animation:blink 1s steps(1) infinite}
+      @keyframes blink{50%{opacity:0}}
+      .ring{transform-origin:1050px 150px;animation:spin 20s linear infinite}
+      .ring2{animation-duration:12s;animation-direction:reverse}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <circle class="blob" cx="200" cy="80" r="260" fill="url(#blobA)"/>
+    <circle class="blob b2" cx="900" cy="260" r="280" fill="url(#blobB)"/>
+
+    <!-- orbit rings -->
+    <g fill="none" stroke-width="2">
+      <g class="ring"><circle cx="1050" cy="150" r="90" stroke="#00e5ff" stroke-opacity=".5" stroke-dasharray="6 14"/><circle cx="1140" cy="150" r="6" fill="#00e5ff" stroke="none"/></g>
+      <g class="ring ring2"><circle cx="1050" cy="150" r="60" stroke="#ff00c8" stroke-opacity=".55" stroke-dasharray="40 20"/><circle cx="990" cy="150" r="5" fill="#ff00c8" stroke="none"/></g>
+      <circle cx="1050" cy="150" r="22" fill="#0b1220" stroke="#00e5ff" stroke-opacity=".8"/>
+      <text x="1050" y="157" text-anchor="middle" font-family="Consolas,monospace" font-size="18" font-weight="700" fill="#00e5ff" stroke="none">&lt;/&gt;</text>
+    </g>
+
+    <!-- particles -->
+    <g fill="#00e5ff">
+      <circle class="p" cx="120" cy="330" r="2"/>
+      <circle class="p" cx="310" cy="330" r="3" fill="#ff00c8" style="animation-delay:2s"/>
+      <circle class="p" cx="480" cy="330" r="2" style="animation-delay:4s"/>
+      <circle class="p" cx="660" cy="330" r="2.5" fill="#ff00c8" style="animation-delay:1s"/>
+      <circle class="p" cx="820" cy="330" r="2" style="animation-delay:5.5s"/>
+      <circle class="p" cx="960" cy="330" r="3" style="animation-delay:3s"/>
+      <circle class="p" cx="230" cy="330" r="2" fill="#ff00c8" style="animation-delay:6.5s"/>
+    </g>
+
+    <!-- waves -->
+    <g transform="translate(0 255)">
+      <path class="wave" fill="#00e5ff" fill-opacity=".12" d="M0 30 Q150 0 300 30 T600 30 T900 30 T1200 30 T1500 30 T1800 30 V80 H0Z"/>
+      <path class="wave w2" fill="#ff00c8" fill-opacity=".12" d="M0 40 Q150 70 300 40 T600 40 T900 40 T1200 40 T1500 40 T1800 40 V80 H0Z"/>
+    </g>
+
+    <!-- text -->
+    <text class="tag" x="70" y="92">&gt; HELLO_WORLD</text>
+    <text x="66" y="170" font-family="'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="74" font-weight="800" fill="url(#name)" filter="url(#glow)">Pasindu Hansaka</text>
+    <text class="sub" x="70" y="222">Python · AI agents · Control systems<tspan class="cur" fill="#ff00c8">▌</tspan></text>
+
+    <rect x="1" y="1" width="1198" height="318" rx="18" fill="none" stroke="url(#spread)" stroke-opacity=".6" stroke-width="2"/>
+  </g>
+</svg>

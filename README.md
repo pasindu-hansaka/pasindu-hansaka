@@ -1,5 +1,7 @@
 <div align="center">
 
+<a href="https://github.com/pasindu-hansaka"><img src="./assets/hero.svg" width="100%" alt="Pasindu Hansaka - Python, AI agents and control systems" /></a>
+
 <a href="https://github.com/pasindu-hansaka">
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&center=true&vCenter=true&width=640&height=50&lines=Hi%2C+I'm+Pasindu+Hansaka;Python+%7C+AI+assistants+%7C+Control+systems;Building+in+public&color=0891B2" />
@@ -18,9 +20,9 @@
 
 ## About me
 
-- **Focus:** Python, data work in Jupyter, and web front-ends
-- **Interests:** AI agents, automation tools and control systems (MATLAB/Simulink)
-- **Approach:** build in public, document the work, and make the next contribution easier
+<p align="center"><img src="./assets/terminal.svg" width="760" alt="Terminal: focus on Python, Jupyter and web front-ends; interests in AI agents, automation tools and MATLAB/Simulink control systems; approach: build in public, document the work, help the next contributor" /></p>
+
+<p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>
 
 ## Toolbox
 
@@ -40,6 +42,8 @@
   <img src="https://www.gitskins.com/api/section/stack?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&style=terminal&v=oss-stack-1&mode=dark" width="100%" alt="Pasindu Hansaka technology toolbox" />
 </picture>
 </p>
+
+<p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>
 
 ## Featured projects
 
@@ -77,6 +81,8 @@
 </tr>
 </table>
 
+<p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>
+
 ## Contribution activity
 
 <p align="center">
@@ -86,7 +92,14 @@
 </picture>
 </p>
 
----
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/github-snake.svg" width="100%" alt="Snake eating my contribution graph" />
+</picture>
+</p>
+
+<p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>
 
 ## Let's build together
 
