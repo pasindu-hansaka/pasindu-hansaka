@@ -9,7 +9,7 @@
 </picture>
 </a>
 
-<p><em>AI &amp; ML research intern at Hochschule München and Formula Student Driverless team member, studying Engineering Physics &amp; Data Science.</em></p>
+<p><em>AI &amp; ML research intern at Hochschule München and Formula Student Driverless team member, studying B.Sc. Engineering Physics &amp; Data Science.</em></p>
 
 <p>
   <a href="https://pasindu-hansaka.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Portfolio-visit-9198A1?style=for-the-badge&logo=githubpages&logoColor=1F2328&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/Portfolio-visit-59636E?style=for-the-badge&logo=githubpages&logoColor=FFFFFF&labelColor=1F2328" alt="Portfolio" /></picture></a>
