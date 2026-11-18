@@ -13,7 +13,7 @@
 
 <p>
   <a href="https://pasindu-hansaka.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Portfolio-visit-9198A1?style=for-the-badge&logo=githubpages&logoColor=1F2328&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/Portfolio-visit-59636E?style=for-the-badge&logo=githubpages&logoColor=FFFFFF&labelColor=1F2328" alt="Portfolio" /></picture></a>
-  <a href="https://github.com/pasindu-hansaka"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub-follow-9198A1?style=for-the-badge&logo=github&logoColor=1F2328&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/GitHub-follow-59636E?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=1F2328" alt="GitHub" /></picture></a>
+  <a href="https://www.linkedin.com/in/pasindu-hansaka"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LinkedIn-connect-9198A1?style=for-the-badge&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/LinkedIn-connect-59636E?style=for-the-badge&labelColor=1F2328" alt="LinkedIn" /></picture></a>
 </p>
 
 </div>
@@ -74,6 +74,6 @@
 
 <p align="center">
   <a href="https://pasindu-hansaka.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Portfolio-visit-9198A1?style=for-the-badge&logo=githubpages&logoColor=1F2328&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/Portfolio-visit-59636E?style=for-the-badge&logo=githubpages&logoColor=FFFFFF&labelColor=1F2328" alt="Portfolio" /></picture></a>
-  <a href="https://github.com/pasindu-hansaka"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub-follow-9198A1?style=for-the-badge&logo=github&logoColor=1F2328&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/GitHub-follow-59636E?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=1F2328" alt="GitHub" /></picture></a>
+  <a href="https://www.linkedin.com/in/pasindu-hansaka"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LinkedIn-connect-9198A1?style=for-the-badge&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/LinkedIn-connect-59636E?style=for-the-badge&labelColor=1F2328" alt="LinkedIn" /></picture></a>
   <a href="https://github.com/pasindu-hansaka/pasindu-hansaka/issues/new"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Open-an%20issue-9198A1?style=for-the-badge&logo=github&logoColor=1F2328&labelColor=E6EDF3" /><img src="https://img.shields.io/badge/Open-an%20issue-59636E?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=1F2328" alt="Open an issue" /></picture></a>
 </p>
