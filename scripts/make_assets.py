@@ -141,14 +141,14 @@ fx, fy, fr = 190, 70, 34    # flywheel (reaction wheel)
 fspokes = "".join(f'<path d="M{fx} {fy} L{fx+fr*math.cos(k*math.pi/3):.1f} {fy+fr*math.sin(k*math.pi/3):.1f}"/>' for k in range(6))
 notes = [("Agents that read, plan and act", "Python"),
          ("Controllers that keep things upright", "MATLAB/Simulink"),
-         ("Fast, close-to-the-metal pieces", "C++")]
+         ("Driverless planning and SLAM", "ROS · Formula Student")]
 note_svg = []
 for i, (t, tag) in enumerate(notes):
     y = 128 + i * 46; d = 2.6 + i * 0.7
     note_svg.append(pen(10 + i, 560, y - 26, 40, 400, d, 0.9))
     note_svg.append(f'<text x="566" y="{y}" font-size="21" clip-path="url(#p{10+i})">{t}</text>')
     note_svg.append(f'<text class="fade" x="568" y="{y+20}" font-size="12" letter-spacing="3" style="fill:{WAX};animation-delay:{d+0.6:.1f}s">{tag.upper()}</text>')
-write("workbench.svg", f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="On the workbench: an ink sketch of a self-balancing unicycle being drawn, with turning gears. Building AI agents in Python, controllers in MATLAB/Simulink and fast pieces in C++.">
+write("workbench.svg", f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="On the workbench: an ink sketch of a self-balancing unicycle being drawn, with turning gears. Building AI agents in Python, controllers in MATLAB/Simulink and driverless planning and SLAM for Formula Student.">
 <defs>{paper_defs(W,H)}{pen(9, 560, 36, 50, 400, 2.0, 1)}<style>{BASE_CSS}
 .sk{{fill:none;stroke:{INK};stroke-width:2;stroke-linecap:round;stroke-linejoin:round}}
 .thin{{stroke-width:1.1;stroke-opacity:.7}}

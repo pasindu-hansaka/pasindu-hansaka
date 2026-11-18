@@ -20,7 +20,7 @@
 
 ## On the workbench
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench-dark.svg" /><img src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench.svg" width="100%" alt="An ink sketch of a self-balancing unicycle being drawn, with turning gears: building AI agents in Python, controllers in MATLAB/Simulink and fast pieces in C++" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench-dark.svg?v=2" /><img src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/workbench.svg?v=2" width="100%" alt="An ink sketch of a self-balancing unicycle being drawn, with turning gears: building AI agents in Python, controllers in MATLAB/Simulink and driverless planning and SLAM for Formula Student" /></picture></p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider.svg" width="100%" alt="" /></picture></p>
 
