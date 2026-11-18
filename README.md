@@ -26,57 +26,31 @@
 
 ## Toolbox
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter" />
-  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white" alt="MATLAB" />
-  <img src="https://img.shields.io/badge/Simulink-E16737?style=flat-square&logoColor=white" alt="Simulink" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-</p>
-
-<p align="center"><code>pasindu-hansaka@github ~ $ toolbox --list</code></p>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&style=terminal&v=oss-stack-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/stack?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&style=terminal&v=oss-stack-1&mode=dark" width="100%" alt="Pasindu Hansaka technology toolbox" />
-</picture>
-</p>
+<p align="center"><img src="./assets/toolbox.svg" width="640" alt="Toolbox: Python, HTML5, Jupyter, MATLAB, Simulink, Git, GitHub" /></p>
 
 <p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>
 
 ## Featured projects
 
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&repos=pasindu-hansaka%2FPSB-Chatbot%2Cpasindu-hansaka%2Ffile-organizer%2Cpasindu-hansaka%2Fself-balancing-unicycle%2Cpasindu-hansaka%2Fpasindu-hansaka.github.io&v=oss-projects-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/projects?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&repos=pasindu-hansaka%2FPSB-Chatbot%2Cpasindu-hansaka%2Ffile-organizer%2Cpasindu-hansaka%2Fself-balancing-unicycle%2Cpasindu-hansaka%2Fpasindu-hansaka.github.io&v=oss-projects-1&mode=dark" width="860" alt="Pasindu Hansaka featured repositories" />
-</picture>
-</p>
-
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/pasindu-hansaka/PSB-Chatbot">PSB-Chatbot</a></h3>
-<p>An AI-powered academic assistant for PSB students.</p>
-<p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/github/stars/pasindu-hansaka/PSB-Chatbot?style=flat-square" alt="Stars" /></p>
+<td width="50%" align="center">
+<a href="https://github.com/pasindu-hansaka/PSB-Chatbot"><img src="./assets/project-ai.svg" width="100%" alt="PSB-Chatbot" /></a>
+<img src="https://img.shields.io/github/stars/pasindu-hansaka/PSB-Chatbot?style=flat-square&color=00e5ff&labelColor=0b1220" alt="Stars" />
 </td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/pasindu-hansaka/file-organizer">file-organizer</a></h3>
-<p>A Python CLI that sorts files into type-based folders (Images, Documents, Videos and more).</p>
-<p><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/github/stars/pasindu-hansaka/file-organizer?style=flat-square" alt="Stars" /></p>
+<td width="50%" align="center">
+<a href="https://github.com/pasindu-hansaka/file-organizer"><img src="./assets/project-cli.svg" width="100%" alt="file-organizer" /></a>
+<img src="https://img.shields.io/github/stars/pasindu-hansaka/file-organizer?style=flat-square&color=00e5ff&labelColor=0b1220" alt="Stars" />
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/pasindu-hansaka/self-balancing-unicycle">self-balancing-unicycle</a></h3>
-<p>A MATLAB/Simulink model of a self-balancing unicycle with a PID controller. It simulates wheel and flywheel dynamics from an initial lean angle.</p>
-<p><img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white" alt="MATLAB" /> <img src="https://img.shields.io/github/stars/pasindu-hansaka/self-balancing-unicycle?style=flat-square" alt="Stars" /></p>
+<td width="50%" align="center">
+<a href="https://github.com/pasindu-hansaka/self-balancing-unicycle"><img src="./assets/project-sim.svg" width="100%" alt="self-balancing-unicycle" /></a>
+<img src="https://img.shields.io/github/stars/pasindu-hansaka/self-balancing-unicycle?style=flat-square&color=00e5ff&labelColor=0b1220" alt="Stars" />
 </td>
-<td width="50%" valign="top">
-<h3><a href="https://github.com/pasindu-hansaka/pasindu-hansaka.github.io">pasindu-hansaka.github.io</a></h3>
-<p>My personal portfolio website.</p>
-<p><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" /> <img src="https://img.shields.io/github/stars/pasindu-hansaka/pasindu-hansaka.github.io?style=flat-square" alt="Stars" /></p>
+<td width="50%" align="center">
+<a href="https://github.com/pasindu-hansaka/pasindu-hansaka.github.io"><img src="./assets/project-web.svg" width="100%" alt="pasindu-hansaka.github.io" /></a>
+<img src="https://img.shields.io/github/stars/pasindu-hansaka/pasindu-hansaka.github.io?style=flat-square&color=00e5ff&labelColor=0b1220" alt="Stars" />
 </td>
 </tr>
 </table>
@@ -85,12 +59,7 @@
 
 ## Contribution activity
 
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&style=terminal&v=oss-stats-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/stats?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&style=terminal&v=oss-stats-1&mode=dark" width="100%" alt="Pasindu Hansaka contribution stats" />
-</picture>
-</p>
+<p align="center"><img src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/activity.svg" width="100%" alt="Animated contribution heatmap, streaks and last 30 days of activity" /></p>
 
 <p align="center">
 <picture>
@@ -103,13 +72,10 @@
 
 ## Let's build together
 
-If any of this is useful to you, you're welcome to open an issue, improve the docs, suggest an idea or just start a conversation.
+<p align="center"><img src="./assets/footer.svg" width="100%" alt="Thanks for visiting - open an issue, improve the docs, share an idea or say hi" /></p>
 
 <p align="center">
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&v=oss-social-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/social?username=pasindu-hansaka&theme=neon&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F251326367%3Fu%3Dbb6faf1c3b996f9d8f8d2663d9b831c12f0296b2%26v%3D4&v=oss-social-1&mode=dark" width="100%" alt="Pasindu Hansaka community links" />
-</picture>
+  <a href="https://pasindu-hansaka.github.io"><img src="https://img.shields.io/badge/Portfolio-visit-00e5ff?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=0b1220" alt="Portfolio" /></a>
+  <a href="https://github.com/pasindu-hansaka"><img src="https://img.shields.io/badge/GitHub-follow-ff00c8?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1220" alt="GitHub" /></a>
+  <a href="https://github.com/pasindu-hansaka/pasindu-hansaka/issues/new"><img src="https://img.shields.io/badge/Say-hi-00e5ff?style=for-the-badge&logo=githubsponsors&logoColor=white&labelColor=0b1220" alt="Say hi" /></a>
 </p>
-
-

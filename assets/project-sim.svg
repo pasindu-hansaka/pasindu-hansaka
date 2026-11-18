@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 170" width="440" height="170" role="img" aria-label="self-balancing-unicycle: MATLAB/Simulink model of a self-balancing unicycle with a PID controller.">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#ff00c8"/></linearGradient>
+<style>text{font-family:'Fira Code','JetBrains Mono',Consolas,monospace}.n{font-size:19px;font-weight:700;fill:url(#g)}.d{font-size:13.5px;fill:#c9d1d9}.l{font-size:12.5px;fill:#8b949e}
+.c{animation:in .7s 0.30s both}@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.run{stroke-dasharray:120 1092;animation:run 5s 1.2s linear infinite}@keyframes run{to{stroke-dashoffset:-1212}}@media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important}}</style></defs>
+<g class="c">
+<rect x="2" y="2" width="436" height="166" rx="14" fill="#0b1220" stroke="#00e5ff" stroke-opacity=".25" stroke-width="1.5"/>
+<rect class="run" x="2" y="2" width="436" height="166" rx="14" fill="none" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round"/>
+<text x="24" y="38" class="l">📁 repo</text>
+<text class="n" x="24" y="62">self-balancing-unicycle</text>
+<text class="d" x="24" y="86">MATLAB/Simulink model of a self-balancing</text><text class="d" x="24" y="107">unicycle with a PID controller.</text>
+<circle cx="30" cy="146" r="6" fill="#0076a8"/><text class="l" x="44" y="150">MATLAB</text>
+<text class="l" x="416" y="150" text-anchor="end" fill="#00e5ff">view →</text>
+</g></svg>

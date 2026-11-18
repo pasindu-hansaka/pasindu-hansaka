@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate contribution snake and activity chart
 
 on:
   schedule:
@@ -15,6 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate animated activity chart
+        run: python scripts/activity.py "${{ github.repository_owner }}" dist/activity.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
