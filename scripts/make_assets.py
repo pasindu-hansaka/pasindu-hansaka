@@ -76,24 +76,46 @@ write("divider.svg", f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12
 <circle class="fade" cx="600" cy="20" r="3" fill="{SEPIA}" style="animation-delay:1.6s"/>
 </svg>''')
 
-# ---------------- toolbox: one compact row of stamps ----------------
-items = ["Python", "C++", "Jupyter", "MATLAB", "Simulink", "Git", "GitHub"]
-import random; rnd = random.Random(4)
-widths = [30 + len(it) * 10 for it in items]; gap = 12
-W = sum(widths) + gap * (len(items) - 1) + 80; H = 130; out = []; x = 40; y = 92
-for k, (it, w) in enumerate(zip(items, widths)):
-    rot = rnd.uniform(-3, 3)
-    out.append(f'<g transform="rotate({rot:.1f} {x+w/2:.0f} {y})"><g class="stamp" style="animation-delay:{0.5+k*0.2:.2f}s">'
-               f'<rect x="{x}" y="{y-17}" width="{w}" height="30" rx="3" fill="none" stroke="{WAX}" stroke-width="1.8" stroke-opacity=".85"/>'
-               f'<rect x="{x+3}" y="{y-14}" width="{w-6}" height="24" rx="2" fill="none" stroke="{WAX}" stroke-opacity=".4"/>'
-               f'<text x="{x+w/2:.0f}" y="{y+5}" text-anchor="middle" font-size="16" letter-spacing="1" style="fill:{WAX}">{it.upper()}</text></g></g>')
-    x += w + gap
-write("toolbox.svg", f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Tech stack: {", ".join(items)}">
-<defs>{paper_defs(W,H)}{pen(0, 0, 18, 40, W, .1, 1)}<style>{BASE_CSS}</style></defs>
-{paper(W,H)}
-<text x="40" y="46" font-size="22" font-style="italic" clip-path="url(#p0)">Instruments of the Trade</text>
-<path class="ink" d="M40 56 H230" stroke="{FAINT}" style="animation-delay:.6s"/>
-{"".join(out)}
+# ---------------- tech stack: colourful logos with names ----------------
+# Logos from Devicon (MIT, see scripts/icons/LICENSE-devicon); the Simulink mark is drawn here.
+import re as _re
+ICON_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons")
+DARK_FIX = {"#181616": "#e6edf3", "#22314e": "#c9d1d9", "#130754": "#c9c3ff", "#2c2c2c": "#c9d1d9"}
+
+def icon(slug, x, y, size):
+    raw = open(os.path.join(ICON_DIR, f"{slug}.svg"), encoding="utf-8").read()
+    vb = _re.search(r'viewBox="([^"]+)"', raw).group(1)
+    inner = _re.sub(r"^.*?<svg[^>]*>|</svg>\s*$", "", raw, flags=_re.S)
+    if DARK:
+        for a, b in DARK_FIX.items():
+            inner = _re.sub(a, b, inner, flags=_re.I)
+    return f'<svg x="{x}" y="{y}" width="{size}" height="{size}" viewBox="{vb}">{inner}</svg>'
+
+def simulink(x, y, s):
+    return (f'<svg x="{x}" y="{y}" width="{s}" height="{s}" viewBox="0 0 128 128">'
+            f'<rect x="6" y="6" width="116" height="116" rx="22" fill="#e16737"/>'
+            f'<g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">'
+            f'<rect x="20" y="42" width="30" height="26" rx="3"/><rect x="78" y="42" width="30" height="26" rx="3"/>'
+            f'<path d="M50 55 H72 M66 49 L72 55 L66 61"/><path d="M93 68 V92 H35 V74"/><path d="M29 80 L35 74 L41 80"/></g></svg>')
+
+stack = [("Python", "python"), ("C++", "cplusplus"), ("MATLAB", "matlab"), ("Simulink", None), ("Arduino", "arduino"), ("ROS", "ros"),
+         ("NumPy", "numpy"), ("Pandas", "pandas"), ("Matplotlib", "matplotlib"), ("Jupyter", "jupyter"), ("Git", "git"), ("GitHub", "github")]
+cols, tile, ic = 6, 130, 54
+W = cols * tile + 40; H = 2 * 128 + 24; tiles = []
+for k, (name, slug) in enumerate(stack):
+    r, c = divmod(k, cols)
+    x0 = 20 + c * tile; y0 = 12 + r * 128
+    cx = x0 + tile / 2
+    logo = simulink(cx - ic/2, y0 + 18, ic) if slug is None else icon(slug, cx - ic/2, y0 + 18, ic)
+    tiles.append(f'<g class="tile" style="animation-delay:{0.15 + k*0.09:.2f}s">'
+                 f'<rect x="{x0+8}" y="{y0+4}" width="{tile-16}" height="116" rx="12" fill="none" stroke="{FAINT}"/>'
+                 f'{logo}<text x="{cx}" y="{y0+102}" text-anchor="middle" font-size="16">{name}</text></g>')
+write("stack.svg", f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Tech stack: {", ".join(n for n, _ in stack)}">
+<style>{BASE_CSS}
+.tile{{opacity:0;animation:pop .6s cubic-bezier(.2,1.4,.4,1) forwards;transform-box:fill-box;transform-origin:center}}
+@keyframes pop{{from{{opacity:0;transform:translateY(10px) scale(.85)}}to{{opacity:1;transform:none}}}}
+</style>
+{"".join(tiles)}
 </svg>''')
 
 # ---------------- project cards: postcards ----------------

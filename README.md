@@ -26,7 +26,20 @@
 
 ## Tech stack
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/toolbox-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/toolbox.svg" width="620" alt="Tech stack: Python, C++, Jupyter, MATLAB, Simulink, Git, GitHub" /></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/stack-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/stack.svg" width="760" alt="Tech stack: Python, C++, MATLAB, Simulink, Arduino, ROS, NumPy, Pandas, Matplotlib, Jupyter, Git, GitHub" /></picture></p>
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider.svg" width="100%" alt="" /></picture></p>
+
+## GitHub activity
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/activity-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/activity.svg" width="100%" alt="Contribution heatmap, streaks and the last 30 days of activity" /></picture></p>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/github-snake-dark.svg" />
+  <img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/github-snake.svg" width="100%" alt="Snake eating my contribution graph" />
+</picture>
+</p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider.svg" width="100%" alt="" /></picture></p>
 
@@ -54,19 +67,6 @@
 </td>
 </tr>
 </table>
-
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider.svg" width="100%" alt="" /></picture></p>
-
-## GitHub activity
-
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/activity-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/activity.svg" width="100%" alt="Contribution heatmap, streaks and the last 30 days of activity" /></picture></p>
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/github-snake-dark.svg" />
-  <img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/output/github-snake.svg" width="100%" alt="Snake eating my contribution graph" />
-</picture>
-</p>
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider-dark.svg" /><img loading="lazy" src="https://raw.githubusercontent.com/pasindu-hansaka/pasindu-hansaka/main/assets/divider.svg" width="100%" alt="" /></picture></p>
 
